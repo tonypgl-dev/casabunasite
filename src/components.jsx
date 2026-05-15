@@ -17,7 +17,7 @@ function Nav({ page, setPage }) {
     <header className="nav">
       <div className="nav-inner">
         <div className="nav-logo" onClick={() => setPage('home')}>
-          <img src="casa.png" alt="Casa Bună" style={{ height: 36, display: 'block' }} />
+          <img src="casa.png" alt="Casa Bună" style={{ height: 72, display: 'block' }} />
         </div>
         <nav className="nav-links">
           {items.map(it => (
