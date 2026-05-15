@@ -168,6 +168,12 @@ a.link:hover { background-size: 100% calc(100% - 0px); color: var(--accent-deep)
   -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid var(--rule);
 }
+@media (prefers-color-scheme: dark) {
+  .nav {
+    background: rgba(32,30,27,0.92);
+    border-bottom-color: rgba(255,255,255,0.08);
+  }
+}
 .nav-inner {
   display: flex; align-items: center; justify-content: space-between;
   height: 80px;
