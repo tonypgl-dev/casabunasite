@@ -83,7 +83,7 @@ function Footer({ setPage }) {
         <hr style={{ border: 0, borderTop: '1px solid rgba(245,241,234,0.12)', margin: '56px 0 24px' }} />
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 12, color: 'rgba(245,241,234,0.5)' }}>
           <div>© 2020–2026 Asociația Casa Bună. Toate drepturile rezervate.</div>
-          <img src="casa.png" alt="Casa Bună" style={{ height: 72, display: 'block', opacity: 0.9 }} />
+          <img src="casa-footer.png" alt="Casa Bună" style={{ height: 72, display: 'block' }} />
           <div style={{ display: 'flex', gap: 24 }}>
             <a href="#">Politica de confidențialitate</a>
             <a href="#">Politica de cookies</a>
