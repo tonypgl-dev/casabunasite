@@ -12,7 +12,7 @@ function DoneazaPage({ setPage }) {
   // Donor level system
   const levels = [
     { min: 10, max: 29, name: 'Picătură', icon: '◦', color: 'var(--ink-mute)', desc: 'Începe drumul. O lumânare aprinsă lunar.' },
-    { min: 30, max: 79, name: 'Prieten al casei', icon: '✦', color: 'var(--accent)', desc: 'Susții un copil la meditații săptămânale.' },
+    { min: 30, max: 79, name: 'Prieten al casei', icon: '✦', img: 'favicon.png', color: 'var(--accent)', desc: 'Susții un copil la meditații săptămânale.' },
     { min: 80, max: 199, name: 'Sprijinitor', icon: '✱', color: 'var(--forest)', desc: 'Acoperi consult medical + meditații pentru un copil.' },
     { min: 200, max: 499, name: 'Erou anonim', icon: '✺', color: 'var(--rose)', desc: 'Susții o întreagă comunitate de 5 copii.' },
     { min: 500, max: 99999, name: 'Pilon de comunitate', icon: '✸', color: 'var(--ink)', desc: 'Un nume pe care îl ținem minte zeci de ani.' },
@@ -143,7 +143,10 @@ function RecurrentFlow({ amount, setAmount, custom, setCustom, currentLevel, nex
               <div className="panel" style={{ background: 'var(--bg-paper)', padding: 32 }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 22 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-                    <div style={{ fontSize: 48, color: currentLevel.color, lineHeight: 1 }}>{currentLevel.icon}</div>
+                    {currentLevel.img
+                      ? <img src={currentLevel.img} alt="" style={{ height: 48, width: 48, objectFit: 'contain' }} />
+                      : <div style={{ fontSize: 48, color: currentLevel.color, lineHeight: 1 }}>{currentLevel.icon}</div>
+                    }
                     <div>
                       <div style={{ fontFamily: 'var(--serif)', fontSize: 32, fontStyle: 'italic' }}>{currentLevel.name}</div>
                       <div className="kicker" style={{ marginTop: 4 }}>nivelul tău de donator</div>
