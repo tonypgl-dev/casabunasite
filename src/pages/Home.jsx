@@ -411,7 +411,7 @@ function HomeWallOfFame({ setPage }) {
             <div className="eyebrow"><span className="dot"></span>Wall of Fame</div>
             <h2 className="display-l" style={{ marginTop: 22 }}>
               2.847 de oameni<br />
-              fac <span className="italic" style={{ color: 'var(--accent)' }}>Casa Bună</span> posibilă.
+              fac <span className="italic" style={{ color: '#fff' }}>Casa Bună</span> posibilă.
             </h2>
           </div>
           <button className="btn btn-ghost" onClick={() => setPage('implica')}>Vezi tot zidul <Arrow size={14}/></button>
