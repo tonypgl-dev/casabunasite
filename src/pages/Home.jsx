@@ -267,8 +267,13 @@ function HomeCalculator({ setPage }) {
                 <button
                   key={p}
                   onClick={() => setAmount(p)}
-                  className={`btn ${amount === p ? 'btn-primary' : 'btn-ghost'} btn-pill`}
-                  style={{ padding: '10px 18px', fontSize: 14 }}
+                  className="btn btn-pill"
+                  style={{
+                    padding: '10px 18px', fontSize: 14,
+                    background: amount === p ? '#FFD85A' : 'transparent',
+                    color: amount === p ? '#1A1A1A' : 'var(--ink-soft)',
+                    border: amount === p ? '1.5px solid #FFD85A' : '1.5px solid var(--rule)',
+                  }}
                 >
                   {p} lei
                 </button>
