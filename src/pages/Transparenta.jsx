@@ -27,7 +27,7 @@ function TPHero() {
         <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 64, alignItems: 'end', marginTop: 24 }}>
           <h1 className="display-xl">
             Vezi fiecare<br />
-            <span className="italic" style={{ color: 'var(--accent)' }}>leu.</span> Pe el. Și<br />
+            <span className="italic" style={{ color: 'var(--accent)' }}>leu.</span> Și<br />
             unde se duce.
           </h1>
           <p className="lead text-soft" style={{ maxWidth: 420 }}>
