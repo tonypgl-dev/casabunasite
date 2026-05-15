@@ -221,10 +221,10 @@ function HomeCalculator({ setPage }) {
   const [amount, setAmount] = useState(50);
   const impact = useMemo(() => {
     const items = [
-      { unit: 'meditații', cost: 12, color: 'var(--accent)', icon: '✎' },
+      { unit: 'meditații', cost: 12, color: '#FFD85A', icon: '✎' },
       { unit: 'mese calde', cost: 9, color: 'var(--forest)', icon: '✻' },
       { unit: 'cărți & rechizite', cost: 18, color: 'var(--ink)', icon: '❒' },
-      { unit: 'zile de tabără', cost: 65, color: 'var(--rose)', icon: '☉' },
+      { unit: 'zile de tabără', cost: 65, color: '#FFD85A', icon: '☉' },
     ];
     return items.map(it => ({ ...it, qty: Math.floor(amount / it.cost) }));
   }, [amount]);
