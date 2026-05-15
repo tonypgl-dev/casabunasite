@@ -31,7 +31,7 @@ function TPHero() {
             unde se duce.
           </h1>
           <p className="lead text-soft" style={{ maxWidth: 420 }}>
-            Updateăm dashboard-ul în fiecare miercuri. Vezi de unde vin banii și cum sunt cheltuiți —
+            Updatăm dashboard-ul în fiecare miercuri. Vezi de unde vin banii și cum sunt cheltuiți —
             categorie cu categorie, sat cu sat.
           </p>
         </div>
