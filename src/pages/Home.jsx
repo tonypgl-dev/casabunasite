@@ -364,8 +364,8 @@ function HomeStories() {
             <div style={{ padding: 32 }}>
               <div className="quote-mark" style={{ position: 'absolute', marginTop: -90, marginLeft: -10, height: 0 }}>"</div>
               <div style={{ fontFamily: 'var(--serif)', fontSize: 28, lineHeight: 1.25, marginTop: 8 }}>
-                Acum pot citi orice carte fără să mi se facă rușine.
-                <span className="italic" style={{ color: 'var(--accent)' }}> Asta nu mi-au putut lua niciodată.</span>
+                Acum pot citi orice carte fără să mi se facă rușine
+                <span className="italic" style={{ color: 'var(--accent)' }}> că nu știu să citesc.</span>
               </div>
               <div className="kicker" style={{ marginTop: 28 }}>ana · clasa a VIII-a · în programe de 4 ani</div>
             </div>
