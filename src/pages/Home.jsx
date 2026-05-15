@@ -255,7 +255,7 @@ function HomeCalculator({ setPage }) {
               style={{
                 width: '100%',
                 marginTop: 32,
-                accentColor: 'var(--accent)',
+                accentColor: '#FFD85A',
                 height: 6,
               }}
             />
