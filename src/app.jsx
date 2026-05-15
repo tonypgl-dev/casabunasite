@@ -16,7 +16,7 @@ const PALETTES = {
       '--bg': '#F5F1EA', '--bg-deep': '#EDDFD0', '--bg-paper': '#FAF6EE',
       '--ink': '#1A1A1A', '--ink-soft': '#4A4642', '--ink-mute': '#8C857B',
       '--rule': '#D8CFC0', '--accent': '#D97757', '--accent-deep': '#B85A3C',
-      '--forest': '#2A5D3C', '--forest-deep': '#1F4A2D', '--sun': '#E8C254', '--rose': '#C8553D',
+      '--forest': '#2A5D3C', '--forest-deep': '#1F4A2D', '--sun': '#FFD85A', '--rose': '#C8553D',
     }
   },
   'olive-clay': {
@@ -26,7 +26,7 @@ const PALETTES = {
       '--bg': '#EFEBE0', '--bg-deep': '#E2DCC9', '--bg-paper': '#F7F3E8',
       '--ink': '#1F1A14', '--ink-soft': '#403A2D', '--ink-mute': '#857d6d',
       '--rule': '#CFC8B3', '--accent': '#A14B2E', '--accent-deep': '#7E3820',
-      '--forest': '#5C6B2A', '--forest-deep': '#42501B', '--sun': '#D4A93C', '--rose': '#A14B2E',
+      '--forest': '#5C6B2A', '--forest-deep': '#42501B', '--sun': '#FFD85A', '--rose': '#A14B2E',
     }
   },
   'ink-cream': {
@@ -36,7 +36,7 @@ const PALETTES = {
       '--bg': '#F8F4ED', '--bg-deep': '#ECE5D3', '--bg-paper': '#FFFCF5',
       '--ink': '#0A0A0A', '--ink-soft': '#2C2A28', '--ink-mute': '#827D75',
       '--rule': '#D8CFC0', '--accent': '#B8431F', '--accent-deep': '#8B3217',
-      '--forest': '#0F2742', '--forest-deep': '#091A2D', '--sun': '#E6AE2A', '--rose': '#B8431F',
+      '--forest': '#0F2742', '--forest-deep': '#091A2D', '--sun': '#FFD85A', '--rose': '#B8431F',
     }
   },
   'sage-rose': {
@@ -46,7 +46,7 @@ const PALETTES = {
       '--bg': '#F2EFE8', '--bg-deep': '#E5DFCF', '--bg-paper': '#F9F6EF',
       '--ink': '#221E1B', '--ink-soft': '#48423d', '--ink-mute': '#8a8278',
       '--rule': '#D5CCBA', '--accent': '#C26F66', '--accent-deep': '#9C4F47',
-      '--forest': '#6B7E5C', '--forest-deep': '#4F5F42', '--sun': '#DEB261', '--rose': '#C26F66',
+      '--forest': '#6B7E5C', '--forest-deep': '#4F5F42', '--sun': '#FFD85A', '--rose': '#C26F66',
     }
   },
   'dawn-night': {
@@ -56,7 +56,7 @@ const PALETTES = {
       '--bg': '#171715', '--bg-deep': '#221F1B', '--bg-paper': '#1F1C18',
       '--ink': '#FAF6EE', '--ink-soft': '#C9C2B3', '--ink-mute': '#8b8478',
       '--rule': '#33302a', '--accent': '#F2A65A', '--accent-deep': '#D08A40',
-      '--forest': '#88B289', '--forest-deep': '#6A9A6B', '--sun': '#F5D26A', '--rose': '#E68A7C',
+      '--forest': '#88B289', '--forest-deep': '#6A9A6B', '--sun': '#FFD85A', '--rose': '#E68A7C',
     }
   },
 };
