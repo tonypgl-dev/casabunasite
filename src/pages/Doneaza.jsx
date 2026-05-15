@@ -258,7 +258,7 @@ function SummaryCard({ amount, level }) {
           <div style={{ fontSize: 18, fontFamily: 'var(--sans)', color: 'rgba(245,241,234,0.6)' }}>lei / lună</div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8 }}>
-          <img src="favicon.png" alt="" style={{ height: 32, width: 32, objectFit: 'contain' }} />
+          <img src="favicon-white.png" alt="" style={{ height: 32, width: 32, objectFit: 'contain' }} />
           <span style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 18 }}>{level.name}</span>
         </div>
       </div>
