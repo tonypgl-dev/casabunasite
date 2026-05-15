@@ -11,11 +11,11 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 const PALETTES = {
   'warm-paper': {
     label: 'Hârtie caldă',
-    swatches: ['#F5F1EA', '#D97757', '#2A5D3C', '#1A1A1A'],
+    swatches: ['#F5F1EA', '#7F4439', '#2A5D3C', '#1A1A1A'],
     vars: {
       '--bg': '#F5F1EA', '--bg-deep': '#EDDFD0', '--bg-paper': '#FAF6EE',
       '--ink': '#1A1A1A', '--ink-soft': '#4A4642', '--ink-mute': '#8C857B',
-      '--rule': '#D8CFC0', '--accent': '#D97757', '--accent-deep': '#B85A3C',
+      '--rule': '#D8CFC0', '--accent': '#7F4439', '--accent-deep': '#6B2C20',
       '--forest': '#2A5D3C', '--forest-deep': '#1F4A2D', '--sun': '#FFD85A', '--rose': '#C8553D',
     }
   },
