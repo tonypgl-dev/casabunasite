@@ -168,22 +168,20 @@ a.link:hover { background-size: 100% calc(100% - 0px); color: var(--accent-deep)
   -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid var(--rule);
 }
-@media (prefers-color-scheme: dark) {
-  .nav {
-    background: rgba(32,30,27,0.92);
-    border-bottom-color: rgba(255,255,255,0.08);
-  }
-  .nav-link {
-    color: rgba(245,241,234,0.65);
-  }
-  .nav-link:hover {
-    color: rgba(245,241,234,0.95);
-    background: rgba(245,241,234,0.08);
-  }
-  .nav-link.active {
-    color: rgba(245,241,234,0.95);
-    background: rgba(245,241,234,0.12);
-  }
+.nav-dark {
+  background: rgba(32,30,27,0.92) !important;
+  border-bottom-color: rgba(255,255,255,0.08) !important;
+}
+.nav-dark .nav-link {
+  color: rgba(245,241,234,0.65);
+}
+.nav-dark .nav-link:hover {
+  color: rgba(245,241,234,0.95);
+  background: rgba(245,241,234,0.08);
+}
+.nav-dark .nav-link.active {
+  color: rgba(245,241,234,0.95);
+  background: rgba(245,241,234,0.12);
 }
 .nav-inner {
   display: flex; align-items: center; justify-content: space-between;

@@ -6,6 +6,13 @@ const { useState, useEffect, useRef, useMemo } = React;
 
 // ---------- Navigation ----------
 function Nav({ page, setPage }) {
+  const [dark, setDark] = useState(() => localStorage.getItem('nav-dark') === '1');
+
+  useEffect(() => {
+    document.querySelector('.nav')?.classList.toggle('nav-dark', dark);
+    localStorage.setItem('nav-dark', dark ? '1' : '0');
+  }, [dark]);
+
   const items = [
     { id: 'home', label: 'Acasă' },
     { id: 'programe', label: 'Programe' },
@@ -14,13 +21,10 @@ function Nav({ page, setPage }) {
     { id: 'implica', label: 'Implică-te' },
   ];
   return (
-    <header className="nav">
+    <header className={`nav${dark ? ' nav-dark' : ''}`}>
       <div className="nav-inner">
         <div className="nav-logo" onClick={() => setPage('home')}>
-          <picture>
-            <source srcSet="casa-dark.png" media="(prefers-color-scheme: dark)" />
-            <img src="casa.png" alt="Casa Bună" style={{ height: 72, display: 'block' }} />
-          </picture>
+          <img src={dark ? 'casa-dark.png' : 'casa.png'} alt="Casa Bună" style={{ height: 72, display: 'block' }} />
         </div>
         <nav className="nav-links">
           {items.map(it => (
@@ -30,7 +34,16 @@ function Nav({ page, setPage }) {
               onClick={() => setPage(it.id)}
             >{it.label}</div>
           ))}
-          <div style={{ width: 14 }} />
+          <button
+            onClick={() => setDark(d => !d)}
+            title={dark ? 'Mod luminos' : 'Mod întunecat'}
+            style={{
+              appearance: 'none', border: 0, background: 'transparent',
+              cursor: 'pointer', fontSize: 18, lineHeight: 1,
+              padding: '4px 8px', borderRadius: 6, opacity: 0.7,
+            }}
+          >{dark ? '☀' : '☾'}</button>
+          <div style={{ width: 6 }} />
           <button className="btn btn-primary btn-pill" onClick={() => setPage('doneaza')}>
             Donează <span className="arrow">→</span>
           </button>
