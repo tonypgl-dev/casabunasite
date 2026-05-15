@@ -7,11 +7,24 @@ const { useState, useEffect, useRef, useMemo } = React;
 // ---------- Navigation ----------
 function Nav({ page, setPage }) {
   const [dark, setDark] = useState(() => localStorage.getItem('nav-dark') === '1');
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    document.querySelector('.nav')?.classList.toggle('nav-dark', dark);
     localStorage.setItem('nav-dark', dark ? '1' : '0');
   }, [dark]);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (y < 80) { setHidden(false); }
+      else if (y > lastY + 6) { setHidden(true); }
+      else if (y < lastY - 6) { setHidden(false); }
+      lastY = y;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const items = [
     { id: 'home', label: 'Acasă' },
@@ -21,7 +34,7 @@ function Nav({ page, setPage }) {
     { id: 'implica', label: 'Implică-te' },
   ];
   return (
-    <header className={`nav${dark ? ' nav-dark' : ''}`}>
+    <header className={`nav${dark ? ' nav-dark' : ''}${hidden ? ' nav-hidden' : ''}`}>
       <div className="nav-inner">
         <div className="nav-logo" onClick={() => setPage('home')}>
           <img src={dark ? 'casa-dark.png' : 'casa.png'} alt="Casa Bună" style={{ height: 72, display: 'block' }} />

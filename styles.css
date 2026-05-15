@@ -162,12 +162,22 @@ a.link:hover { background-size: 100% calc(100% - 0px); color: var(--accent-deep)
 
 /* ---------- Nav ---------- */
 .nav {
-  position: sticky; top: 0; z-index: 50;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   background: rgba(245,241,234,0.86);
   backdrop-filter: saturate(160%) blur(14px);
   -webkit-backdrop-filter: saturate(160%) blur(14px);
   border-bottom: 1px solid var(--rule);
+  transform: translateY(0);
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.3s ease,
+              border-color 0.3s ease;
+  will-change: transform;
 }
+.nav.nav-hidden {
+  transform: translateY(-110%);
+}
+/* offset page content for fixed nav */
+body { padding-top: 80px; }
 .nav-dark {
   background: rgba(32,30,27,0.92) !important;
   border-bottom-color: rgba(255,255,255,0.08) !important;
