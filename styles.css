@@ -14,8 +14,8 @@
   --ink-soft: #4A4642;
   --ink-mute: #8C857B;
   --rule: #D8CFC0;
-  --accent: #7F4439;     /* terracotta */
-  --accent-deep: #6B2C20;
+  --accent: #A7665A;     /* terracotta */
+  --accent-deep: #824439;
   --forest: #2A5D3C;
   --forest-deep: #1F4A2D;
   --sun: #E8C254;        /* gamification highlight, sparse */
@@ -118,7 +118,7 @@ a.link:hover { background-size: 100% calc(100% - 0px); color: var(--accent-deep)
 .scribble::after {
   content: "";
   position: absolute; left: -2%; right: -2%; bottom: -0.12em; height: 8px;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'><path d='M2 6 C 40 1, 80 10, 120 4 S 180 8, 198 3' fill='none' stroke='%237F4439' stroke-width='2' stroke-linecap='round'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 10' preserveAspectRatio='none'><path d='M2 6 C 40 1, 80 10, 120 4 S 180 8, 198 3' fill='none' stroke='%23A7665A' stroke-width='2' stroke-linecap='round'/></svg>");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
