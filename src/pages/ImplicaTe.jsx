@@ -72,7 +72,7 @@ function ImplicaVoluntar() {
       <div className="container">
         <SectionHeader
           eyebrow="Roluri deschise"
-          title={<>Câteva ore <span className="italic">pe lună</span>. <span className="mark">Diferență mare.</span></>}
+          title={<>Câteva ore <span className="italic">pe lună</span>. <span className="mark logo">Diferență mare.</span></>}
           kicker="Mai jos rolurile cu nevoie reală în luna mai 2026. Înainte de a accepta pe cineva, facem un interviu scurt și o probă."
         />
 

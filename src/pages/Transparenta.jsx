@@ -419,7 +419,7 @@ function TPDocsAndCTA({ setPage }) {
           <div>
             <div className="eyebrow"><span className="dot"></span>Documente publice</div>
             <h2 className="display-m" style={{ marginTop: 22 }}>
-              Tot ce e <span className="italic">obligatoriu</span>. <span className="mark">+ ce nu e.</span>
+              Tot ce e <span className="italic">obligatoriu</span>. <span className="mark logo">+ ce nu e.</span>
             </h2>
             <div style={{ marginTop: 32, display: 'grid', gap: 1, background: 'var(--rule)', border: '1px solid var(--rule)' }}>
               {[

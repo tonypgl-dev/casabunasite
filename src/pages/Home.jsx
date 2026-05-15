@@ -34,7 +34,7 @@ function HomeHero({ setPage }) {
               <span className="italic" style={{ color: 'var(--accent)' }}>este<br />molipsitor.</span>
             </h1>
             <p className="lead" style={{ maxWidth: 540, marginTop: 32, color: 'var(--ink-soft)' }}>
-              Pentru <span className="mark">400+ copii</span> din Ferentari, Jilava și 7 sate din Argeș,
+              Pentru <span className="mark logo">400+ copii</span> din Ferentari, Jilava și 7 sate din Argeș,
               o donație lunară înseamnă mai mult decât bani —
               înseamnă <span className="italic">o școală terminată, un viitor diferit.</span>
             </p>
