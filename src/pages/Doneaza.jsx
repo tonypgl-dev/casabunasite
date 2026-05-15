@@ -11,11 +11,11 @@ function DoneazaPage({ setPage }) {
 
   // Donor level system
   const levels = [
-    { min: 10, max: 29, name: 'Picătură', icon: '◦', color: 'var(--ink-mute)', desc: 'Începe drumul. O lumânare aprinsă lunar.' },
+    { min: 10, max: 29, name: 'Picătură', icon: '◦', img: 'favicon.png', color: 'var(--ink-mute)', desc: 'Începe drumul. O lumânare aprinsă lunar.' },
     { min: 30, max: 79, name: 'Prieten al casei', icon: '✦', img: 'favicon.png', color: 'var(--accent)', desc: 'Susții un copil la meditații săptămânale.' },
-    { min: 80, max: 199, name: 'Sprijinitor', icon: '✱', color: 'var(--forest)', desc: 'Acoperi consult medical + meditații pentru un copil.' },
-    { min: 200, max: 499, name: 'Erou anonim', icon: '✺', color: 'var(--rose)', desc: 'Susții o întreagă comunitate de 5 copii.' },
-    { min: 500, max: 99999, name: 'Pilon de comunitate', icon: '✸', color: 'var(--ink)', desc: 'Un nume pe care îl ținem minte zeci de ani.' },
+    { min: 80, max: 199, name: 'Sprijinitor', icon: '✱', img: 'favicon.png', color: 'var(--forest)', desc: 'Acoperi consult medical + meditații pentru un copil.' },
+    { min: 200, max: 499, name: 'Erou anonim', icon: '✺', img: 'favicon.png', color: 'var(--rose)', desc: 'Susții o întreagă comunitate de 5 copii.' },
+    { min: 500, max: 99999, name: 'Pilon de comunitate', icon: '✸', img: 'favicon.png', color: 'var(--ink)', desc: 'Un nume pe care îl ținem minte zeci de ani.' },
   ];
   const currentLevel = levels.find(l => amount >= l.min && amount <= l.max) || levels[0];
   const nextLevel = levels[levels.indexOf(currentLevel) + 1];
@@ -258,7 +258,7 @@ function SummaryCard({ amount, level }) {
           <div style={{ fontSize: 18, fontFamily: 'var(--sans)', color: 'rgba(245,241,234,0.6)' }}>lei / lună</div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 8 }}>
-          <span style={{ color: level.color, fontSize: 18 }}>{level.icon}</span>
+          <img src="favicon.png" alt="" style={{ height: 20, width: 20, objectFit: 'contain' }} />
           <span style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 18 }}>{level.name}</span>
         </div>
       </div>
